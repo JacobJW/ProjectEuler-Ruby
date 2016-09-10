@@ -11,7 +11,6 @@ def smallest_multiple
   while found == false
     check_num += 2
     conditions_met = 0
-    puts check_num if check_num % 1e4 == 0
     (11..20).each do |num|
       # check_num has to be divisble by 1..10, which is 2520.
       if (check_num % num != 0) || (check_num % 2520 != 0)
@@ -29,8 +28,5 @@ def smallest_multiple
   puts check_num
 end
 
-time_start = Time.now
 smallest_multiple
-time_end = Time.now
 
-puts time_end - time_start
