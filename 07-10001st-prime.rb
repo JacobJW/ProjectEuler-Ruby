@@ -27,12 +27,7 @@ def nth_prime(n)
       count += 1
     end
   end
-  puts count
   puts num
 end
 
-time_start = Time.now
 nth_prime(10001)
-time_end = Time.now
-
-puts time_end - time_start
